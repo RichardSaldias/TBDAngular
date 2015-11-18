@@ -1,0 +1,24 @@
+<div>
+  <h3><b>Actores</b></h3>
+  <div class="divider"></div>
+  <table class="centered striped bordered">
+    <thead>
+      <tr>
+        <th data-field="firstName">Nombre</th>
+        <th data-field="lastName">Apellido</th>
+        <th data-field="viewDetails">Ver detalles</th>
+      </tr>
+    </thead>
+      <tbody>
+        <tr ng-repeat="a in actors">
+          <td>{{a.firstName}}</td>
+          <td>{{a.lastName}}</td>    
+          <td>
+              <a href="/#/actors/{{a.actorId}}">
+                <i class="material-icons">visibility</i>
+              </a>
+          </td>       
+        </tr>
+      </tbody>
+  </table>
+</div>

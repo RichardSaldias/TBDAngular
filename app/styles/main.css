@@ -1,0 +1,7 @@
+.logo {
+  max-width: 70px;
+  float: left;
+  transition: 1000ms ease; }
+  .logo:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
