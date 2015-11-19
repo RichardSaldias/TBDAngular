@@ -1,7 +1,7 @@
 (function(){
 
     angular.module('angularSpa', [
-    'ngRoute'
+    'ngRoute','ngResource'
     ])
     .config(function($routeProvider){
         $routeProvider

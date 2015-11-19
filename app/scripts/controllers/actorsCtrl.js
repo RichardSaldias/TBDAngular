@@ -5,7 +5,6 @@
             actorsService.getActors()
             .success(function(data){
                 $scope.actors = data;
-                $scope.actorOnly=$scope.actors[$routeParams.id-1];
                 $scope.status = 'Todo funciona bien';
             })
             .error(function(error){
@@ -13,4 +12,11 @@
             });
         }
         getActors();
+        function getActor(){
+            actorsService.getActor($routeParams.id)
+            .success(function(data){
+                $scope.actorOnly = data;
+            });
+        }
+        getActor();
     });
