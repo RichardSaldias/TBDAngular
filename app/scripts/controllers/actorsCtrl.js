@@ -16,6 +16,7 @@
             actorsService.getActor($routeParams.id)
             .success(function(data){
                 $scope.actorOnly = data;
+                console.log( $scope.actorOnly.actorId);
             });
         }
         getActor();
