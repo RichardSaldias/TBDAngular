@@ -8,15 +8,3 @@ angular.module('angularSpa')
             return $http.get(urlBase + actorId);
         };
     });
-
-    
-
-            	//console.log(actorId);
-        	
-//console.log(urlBase + actorId);
-
-       /* .factory('actor',['$resource',function($resource){
-            return $resource('http://localhost:9090/sakila-backend/actors/:id');
-
-    }])
-*/
